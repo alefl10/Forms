@@ -15,7 +15,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ShoppingListPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,7 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ShoppingListPage
   ],
   providers: [
     StatusBar,
