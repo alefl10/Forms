@@ -1,13 +1,13 @@
-import { Ingredient } from "../models/ingredients";
+import { Ingredients } from "../models/ingredients";
 
 export class ShoppingListService {
-  private ingredients: Ingredient[] = [];
+  private ingredients: Ingredients[] = [];
 
   addItem(name: string, amount: number) {
-    this.ingredients.push(new Ingredient(name, amount));
+    this.ingredients.push(new Ingredients(name, amount));
     console.log(this.ingredients);
   }
-  addItems(items: Ingredient[]) {
+  addItems(items: Ingredients[]) {
     this.ingredients.push(...items);
   }
 
@@ -18,5 +18,5 @@ export class ShoppingListService {
   removeItem(index: number) {
     this.ingredients.splice(index, 1);
   }
-  
+
 }

@@ -20,4 +20,9 @@ export class ShoppingListPage {
     form.reset();
     this.loadItems();
   }
+
+  onCheckItem(index: number) {
+   this.slService.removeItem(index);
+   this.loadItems();
+ }
 }
