@@ -8,6 +8,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ShoppingListPage } from '../pages/shopping-list/shopping-list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ShoppingListService } from '../services/ShoppingListService';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    ShoppingListService,
+
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
